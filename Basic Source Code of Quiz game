@@ -1,0 +1,39 @@
+
+print("welcome to my computer games! ")
+playing = input("do you want to play? ")
+if playing != "yes":
+    quit()
+
+print("okey! let's play :)")
+score = 0
+
+answer = input("what does cpu stant for? ")
+if answer == "Central Processing Unit":
+    print("correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("what does GPU stant for? ")
+if answer == "Graphical Processing Unit":
+    print("correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("what does RAM stant for? ")
+if answer == "Random Access Memory":
+    print("correct")
+    score += 1
+else:
+    print("Incorrect")
+
+answer = input("what does ROM stant for? ")
+if answer == "Read Only Memory":
+    print("correct")
+    score += 1
+else:
+    print("Incorrect")
+
+print("your got " + str(score) + " questions correct")
+print("your got " + str(score/4 * 100) + " %")
